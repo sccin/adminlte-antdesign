@@ -4,11 +4,11 @@
 // COLORS
 // --------------------------------------------------------
 // Primary
-@light-blue: #3c8dbc;
+@light-blue: #1890ff; //修改为`@light-blue:#1890ff` ，此变量为主色调背景，运用于按钮颜色！
 // Danger
-@red: #dd4b39;
+@red: #F5222D; //修改为 `@red: #F5222D;`  ，此变量危险色背景，运用于错误，失败，气泡背景！
 // Success
-@green: #00a65a;
+@green: #00a65a; //修改为 `@green: #52c41a;`，此变量成功色背景，运用于提交成功！
 // Info
 @aqua: #00c0ef;
 // Warning
@@ -29,7 +29,7 @@
 // --------------------------------------------------------
 
 // Side bar and logo width
-@sidebar-width: 230px;
+@sidebar-width: 256px; //修改为 `@sidebar-width: 256px;`， 此变量是侧边栏宽度，宽度从230调整至256，更适合大屏幕比例显示。
 // Boxed layout maximum width
 @boxed-layout-max-width: 1024px;
 // When the logo should go to the top of the screen
@@ -41,13 +41,13 @@
 
 // Body background (Affects main content background only)
 @body-bg: #ecf0f5; // DEPRECATED
-@content-bg: #ecf0f5;
+@content-bg: #f0f2f5; //修改为 `@content-bg: #f0f2f5;`，设置主要背景色，（主内容区的背景色），将颜色调的更浅一些，更舒适。
 
 // SIDEBAR SKINS
 // --------------------------------------------------------
 
 // Dark sidebar
-@sidebar-dark-bg: #222d32;
+@sidebar-dark-bg: #001529; //修改为 `@sidebar-dark-bg: #001529;` 设置深色侧边栏背景色，颜色调的更深一些。
 @sidebar-dark-hover-bg: darken(@sidebar-dark-bg, 2%);
 @sidebar-dark-color: lighten(@sidebar-dark-bg, 60%);
 @sidebar-dark-hover-color: #fff;
@@ -56,7 +56,7 @@
 @sidebar-dark-submenu-hover-color: #fff;
 
 // Light sidebar
-@sidebar-light-bg: #f9fafc;
+@sidebar-light-bg: #fff; //修改为 `@sidebar-light-bg: #fff;` 设置亮色侧边栏背景色，颜色调整为白色。
 @sidebar-light-hover-bg: lighten(#f0f0f1, 1.5%);
 @sidebar-light-color: #444;
 @sidebar-light-hover-color: #000;

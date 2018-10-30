@@ -78,7 +78,7 @@
 .skin-black-light .wrapper,
 .skin-black-light .main-sidebar,
 .skin-black-light .left-side {
-  background-color: #f9fafc;
+  background-color: #ffffff;
 }
 .skin-black-light .main-sidebar {
   border-right: 1px solid #d2d6de;
@@ -94,7 +94,7 @@
 }
 .skin-black-light .sidebar-menu > li.header {
   color: #848484;
-  background: #f9fafc;
+  background: #ffffff;
 }
 .skin-black-light .sidebar-menu > li > a {
   border-left: 3px solid transparent;

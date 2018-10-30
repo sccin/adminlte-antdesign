@@ -112,7 +112,7 @@
     float: left;
     height: @navbar-height;
     font-size: 20px;
-    line-height: 50px;
+    line-height: @navbar-height; //修改为 `line-height: @navbar-height;` ，将行高值修改为变量，用于灵活设置进行垂直居中对齐。
     text-align: center;
     width: @sidebar-width;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

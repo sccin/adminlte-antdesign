@@ -3,7 +3,7 @@
  * ---------
  */
 .skin-red .main-header .navbar {
-  background-color: #dd4b39;
+  background-color: #f5222d;
 }
 .skin-red .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -29,7 +29,7 @@
   color: #fff;
 }
 .skin-red .main-header .navbar .sidebar-toggle:hover {
-  background-color: #d73925;
+  background-color: #f30b17;
 }
 @media (max-width: 767px) {
   .skin-red .main-header .navbar .dropdown-menu li.divider {
@@ -39,19 +39,19 @@
     color: #fff;
   }
   .skin-red .main-header .navbar .dropdown-menu li a:hover {
-    background: #d73925;
+    background: #f30b17;
   }
 }
 .skin-red .main-header .logo {
-  background-color: #d73925;
+  background-color: #f30b17;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
 .skin-red .main-header .logo:hover {
-  background-color: #d33724;
+  background-color: #ee0b17;
 }
 .skin-red .main-header li.user-header {
-  background-color: #dd4b39;
+  background-color: #f5222d;
 }
 .skin-red .content-header {
   background: transparent;
@@ -59,15 +59,15 @@
 .skin-red .wrapper,
 .skin-red .main-sidebar,
 .skin-red .left-side {
-  background-color: #222d32;
+  background-color: #001529;
 }
 .skin-red .user-panel > .info,
 .skin-red .user-panel > .info > a {
   color: #fff;
 }
 .skin-red .sidebar-menu > li.header {
-  color: #4b646f;
-  background: #1a2226;
+  color: #00498f;
+  background: #000b15;
 }
 .skin-red .sidebar-menu > li > a {
   border-left: 3px solid transparent;
@@ -76,23 +76,23 @@
 .skin-red .sidebar-menu > li.active > a,
 .skin-red .sidebar-menu > li.menu-open > a {
   color: #ffffff;
-  background: #1e282c;
+  background: #00101f;
 }
 .skin-red .sidebar-menu > li.active > a {
-  border-left-color: #dd4b39;
+  border-left-color: #f5222d;
 }
 .skin-red .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
-  background: #2c3b41;
+  background: #002243;
 }
 .skin-red .sidebar a {
-  color: #b8c7ce;
+  color: #5cafff;
 }
 .skin-red .sidebar a:hover {
   text-decoration: none;
 }
 .skin-red .sidebar-menu .treeview-menu > li > a {
-  color: #8aa4af;
+  color: #108aff;
 }
 .skin-red .sidebar-menu .treeview-menu > li.active > a,
 .skin-red .sidebar-menu .treeview-menu > li > a:hover {
@@ -100,13 +100,13 @@
 }
 .skin-red .sidebar-form {
   border-radius: 3px;
-  border: 1px solid #374850;
+  border: 1px solid #002f5c;
   margin: 10px 10px;
 }
 .skin-red .sidebar-form input[type="text"],
 .skin-red .sidebar-form .btn {
   box-shadow: none;
-  background-color: #374850;
+  background-color: #002f5c;
   border: 1px solid transparent;
   height: 35px;
 }
