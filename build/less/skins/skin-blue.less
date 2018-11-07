@@ -1,26 +1,27 @@
 /*
  * Skin: Blue
  * ----------
- */
+ */  
 @import "../../bootstrap-less/mixins.less";
 @import "../../bootstrap-less/variables.less";
-@import "../variables.less";
-@import "../mixins.less";
+@import "../variables.less"; 
+@import "../mixins.less";      
 
-.skin-blue {
-  //Navbar
-  .main-header {
-    .navbar {
-      .navbar-variant(@light-blue; #fff);
+    
+.skin-blue {  
+  //Navbar   
+  .main-header { 
+    .navbar {   
+      .navbar-variant(@navbar-header-bg; @navbar-header-color; @navbar-header-hover-color; @navbar-header-hover-bg;);
       .sidebar-toggle {
-        color: #fff;
-        &:hover {
-          background-color: darken(@light-blue, 5%);
-        }
+        color: @navbar-header-color;  
+        &:hover {  
+          background-color: darken(@navbar-header-bg, 4.5%);
+        } 
       }
       @media (max-width: @screen-header-collapse) {
         .dropdown-menu {
-          li {
+          li {   
             &.divider {
               background-color: rgba(255, 255, 255, 0.1);
             }
@@ -30,9 +31,9 @@
                 background: darken(@light-blue, 5%);
               }
             }
-          }
+          }         
         }
-      }
+      }  
     }
     //Logo 修改为 `.logo-variant(lighten(@sidebar-dark-bg, 4.5%));`,设置logo处的背景色，是根据侧边栏的背景色高亮4.5%
     .logo {

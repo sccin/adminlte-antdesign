@@ -5,18 +5,18 @@
 @import "../../bootstrap-less/mixins.less";
 @import "../../bootstrap-less/variables.less";
 @import "../variables.less";
-@import "../mixins.less";
+@import "../mixins.less";     
 
 .skin-blue-light {
-  //Navbar
-  .main-header {
-    .navbar {
-      .navbar-variant(@light-blue; #fff);
+  //Navbar                          
+  .main-header {   
+    .navbar {  
+      .navbar-variant(@navbar-header-bg; @navbar-header-color; @navbar-header-hover-color; @navbar-header-hover-bg;);
       .sidebar-toggle {
-        color: #fff;
-        &:hover {
-          background-color: darken(@light-blue, 5%);
-        }
+        color: @navbar-header-color;  
+        &:hover {       
+          background-color: darken(@navbar-header-bg, 4.5%);
+        } 
       }
       @media (max-width: @screen-header-collapse) {
         .dropdown-menu {
@@ -25,20 +25,20 @@
               background-color: rgba(255, 255, 255, 0.1);
             }
             a {
-              color: #fff;
+              color: #fff; 
               &:hover {
                 background: darken(@light-blue, 5%);
               }
-            }
-          }
-        }
+            }          
+          }   
+        }   
       }
     }
-    //Logo
+    //Logo  
     .logo {
-      .logo-variant(@light-blue);
+      .logo-light-variant(@light-blue);
     }
-
+ 
     li.user-header {
       background-color: @light-blue;
     }
@@ -47,7 +47,7 @@
   //Content Header
   .content-header {
     background: transparent;
-  }
+  }  
 
   //Create the sidebar skin
   .skin-light-sidebar(@light-blue);

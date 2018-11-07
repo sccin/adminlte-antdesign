@@ -17,40 +17,38 @@
     }
     .navbar-brand {
       color: #333;
-      border-right: 1px solid #eee;
     }
     .navbar {
-      .navbar-variant(#fff; #333; #999; #fff);
+      .navbar-variant(@navbar-header-bg; @navbar-header-color; @navbar-header-hover-color; @navbar-header-hover-bg;);
       > .sidebar-toggle {
-        color: #333;
-        border-right: 1px solid #eee;
+        color: @navbar-header-color;  
+        &:hover {  
+          background-color: darken(@navbar-header-bg, 4.5%);
+        } 
       }
       .navbar-nav {
         > li > a {
-          border-right: 1px solid #eee;
         }
       }
       .navbar-custom-menu .navbar-nav,
       .navbar-right {
         > li {
           > a {
-            border-left: 1px solid #eee;
             border-right-width: 0;
           }
         }
       }
     }
     .logo {
-      .logo-variant(#fff; #333);
-      border-right: 1px solid #eee;
+      .logo-variant(lighten(@sidebar-dark-bg, 4.5%));
       @media (max-width: @screen-header-collapse) {
-        .logo-variant(#222; #fff);
+        .logo-variant(lighten(@sidebar-dark-bg, 4.5%));
         border-right: none;
       }
     }
 
     li.user-header {
-      background-color: #222;
+      background-color: @blue;
     }
   }
 
@@ -60,7 +58,7 @@
     box-shadow: none;
   }
   //Create the sidebar skin
-  .skin-dark-sidebar(#fff);
+  .skin-dark-sidebar(@aqua;);
 
   .pace {
     .pace-progress {

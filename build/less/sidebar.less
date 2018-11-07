@@ -18,6 +18,7 @@
 
   @media (max-width: @screen-header-collapse) {
     padding-top: 100px;
+    box-shadow: none !important; //侧边栏收缩时，关闭阴影 
   }
 
   @media (max-width: @screen-xs-max) {
@@ -39,6 +40,7 @@
 
 .sidebar {
   padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 // Remove border from form
@@ -94,12 +96,14 @@
     margin: 0;
     padding: 0;
     > a {
-      padding: 12px 5px 12px 15px;
+      padding: 12px 5px 12px 25px;   
       display: block;
       > .fa,
       > .glyphicon,
-      > .ion {
-        width: 20px;
+      > .ion,
+      > .iconfont {
+        width: 18px;
+        margin-right:3px;
       }
     }
     .label,

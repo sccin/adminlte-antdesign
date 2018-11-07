@@ -7,20 +7,23 @@
 .dropdown-menu {
   box-shadow: none;
   border-color: #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   > li > a {
-    color: #777;
+    color: @text-color;
   }
   > li > a > .glyphicon,
   > li > a > .fa,
-  > li > a > .ion {
+  > li > a > .ion,
+  > li > a > .iconfont {
     margin-right: 10px;
   }
   > li > a:hover {
-    background-color: lighten(@gray-lte, 5%);
-    color: #333;
+    background-color: #e6f7ff;
+    color: @text-color;
   }
   > .divider {
-    background-color: #eee;
+    background-color: #e8e8e8;
   }
 }
 
@@ -52,7 +55,7 @@
   //Define footer class
   > .dropdown-menu > li.footer > a {
     .border-radius(0; 0; 4px; 4px);
-    font-size: 12px;
+    font-size: 14px;
     background-color: #fff;
     padding: 7px 10px;
     border-bottom: 1px solid #eeeeee;
@@ -76,6 +79,18 @@
     padding: 0;
     list-style: none;
     overflow-x: hidden;
+    .menu-icon{
+        float: none;  
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        vertical-align: middle;
+    }
+    .menu-text{
+      vertical-align: middle;  
+    }
     > li > a {
       display: block;
       white-space: nowrap; /* Prevent text from breaking */

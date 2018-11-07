@@ -9,12 +9,16 @@ body {
     height: 100%;
   }
 }
-
+  
 body {
-  font-family: @font-family-base; //修改为 `font-family: @font-family-base;`  将字体设置统一用变量设置.
-  font-weight: 400;
+  font-family: @font-family-base;
+  font-weight: 400; 
   overflow-x: hidden;
+  color:@text-color;
   overflow-y: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
 }
 
 /* Layout */
@@ -34,7 +38,7 @@ body {
 }
 
 .layout-boxed {
-  background-color: @sidebar-light-bg;
+  background-color: @sidebar-light-bg;   
 }
 
 /*
@@ -96,9 +100,9 @@ body {
   }
   .content-wrapper,
   .right-side {
-    padding-top: 50px;
+    padding-top: @navbar-height;
     @media (max-width: @screen-header-collapse) {
-      padding-top: 100px;
+      padding-top: @navbar-height * 2;   
     }
   }
   &.layout-boxed {
@@ -128,8 +132,10 @@ body {
 /* Content */
 .content {
   min-height: 250px;
-  padding: 15px;
+  padding: 15px; 
   .container-fixed(@grid-gutter-width);
+  padding-left: 24px !important;  
+  padding-right: 24px !important; 
 }
 
 /* H1 - H6 font */
@@ -145,6 +151,7 @@ h6,
 .h4,
 .h5,
 .h6 {
+  font-weight:400;  
   font-family: @font-family-base; // 修改为 `font-family: @font-family-base;`  将字体设置统一用变量设置.
 }
 

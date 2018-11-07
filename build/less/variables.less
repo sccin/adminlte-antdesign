@@ -1,31 +1,34 @@
 // AdminLTE 2 Variables.less
 // =========================
-
+ 
 // COLORS
 // --------------------------------------------------------
-// Primary
-@light-blue: #1890ff; //修改为`@light-blue:#1890ff` ，此变量为主色调背景，运用于按钮颜色！
-// Danger
-@red: #F5222D; //修改为 `@red: #F5222D;`  ，此变量危险色背景，运用于错误，失败，气泡背景！
-// Success
-@green: #00a65a; //修改为 `@green: #52c41a;`，此变量成功色背景，运用于提交成功！
-// Info
-@aqua: #00c0ef;
-// Warning
-@yellow: #f39c12;
-@blue: #0073b7;
+// Primary  Daybreak Blue / 拂晓蓝
+@light-blue: #1890ff; 
+// Danger  Dust Red / 薄暮
+@red: #F5222D;  
+// Success  Polar Green / 极光绿
+@green: #52c41a; 
+// Info    Geek Blue / 极客蓝
+@aqua: #2f54eb;
+// Warning  Calendula Gold / 金盏花
+@yellow: #faad14;
+
+@blue: #1890ff;
 @navy: #001F3F;
-@teal: #39CCCC;
+@teal: #13c2c2; 	//Cyan / 明青
 @olive: #3D9970;
 @lime: #01FF70;
-@orange: #FF851B;
+@orange: #fa8c16;  //Sunset Orange / 日暮
 @fuchsia: #F012BE;
-@purple: #605ca8;
-@maroon: #D81B60;
+@purple: #722ed1;  //Golden Purple / 酱紫
+@maroon: #eb2f96;  //Magenta / 法式洋红
 @black: #111;
-@gray-lte: #d2d6de;
+@gray-lte: #bfbfbf;  // 灰色
 
-// LAYOUT
+@text-color:rgba(0, 0, 0, 0.65);
+
+// LAYOUT 
 // --------------------------------------------------------
 
 // Side bar and logo width
@@ -36,8 +39,8 @@
 @screen-header-collapse: @screen-xs-max;
 
 // Link colors (Aka: <a> tags)
-@link-color: @light-blue;
-@link-hover-color: lighten(@link-color, 15%);
+@link-color: @text-color;
+@link-hover-color: @light-blue;
 
 // Body background (Affects main content background only)
 @body-bg: #ecf0f5; // DEPRECATED
@@ -49,18 +52,18 @@
 // Dark sidebar
 @sidebar-dark-bg: #001529; //修改为 `@sidebar-dark-bg: #001529;` 设置深色侧边栏背景色，颜色调的更深一些。
 @sidebar-dark-hover-bg: darken(@sidebar-dark-bg, 2%);
-@sidebar-dark-color: lighten(@sidebar-dark-bg, 60%);
+@sidebar-dark-color: rgba(255, 255, 255, 0.65);  
 @sidebar-dark-hover-color: #fff;
-@sidebar-dark-submenu-bg: lighten(@sidebar-dark-bg, 5%);
-@sidebar-dark-submenu-color: lighten(@sidebar-dark-submenu-bg, 40%);
-@sidebar-dark-submenu-hover-color: #fff;
+@sidebar-dark-submenu-bg: darken(@sidebar-dark-bg, 3%);  
+@sidebar-dark-submenu-color: @sidebar-dark-color;
+@sidebar-dark-submenu-hover-color: #fff; 
 
 // Light sidebar
 @sidebar-light-bg: #fff; //修改为 `@sidebar-light-bg: #fff;` 设置亮色侧边栏背景色，颜色调整为白色。
 @sidebar-light-hover-bg: lighten(#f0f0f1, 1.5%);
-@sidebar-light-color: #444;
-@sidebar-light-hover-color: #000;
-@sidebar-light-submenu-bg: @sidebar-light-hover-bg;
+@sidebar-light-color: @text-color;
+@sidebar-light-hover-color: #000;  // 弃用，根据传入的主题色设定
+@sidebar-light-submenu-bg: @sidebar-light-bg;
 @sidebar-light-submenu-color: #777;
 @sidebar-light-submenu-hover-color: #000;
 
@@ -73,11 +76,11 @@
 
 // BOXES
 // --------------------------------------------------------
-@box-border-color: #f4f4f4;
+@box-border-color: #e8e8e8;
 @box-border-radius: 3px;
 @box-footer-bg: #fff;
 @box-boxshadow: 0 1px 1px rgba(0, 0, 0, .1);
-@box-padding: 10px;
+@box-padding: 16px 24px;
 
 // Box variants
 @box-default-border-top-color: #d2d6de;
@@ -86,21 +89,22 @@
 // --------------------------------------------------------
 @btn-boxshadow: none;
 
+
 // PROGRESS BARS
 // --------------------------------------------------------
-@progress-bar-border-radius: 1px;
-@progress-bar-sm-border-radius: 1px;
-@progress-bar-xs-border-radius: 1px;
+@progress-bar-border-radius: 100px;
+@progress-bar-sm-border-radius: 2px;
+@progress-bar-xs-border-radius: 2px;
 
 // FORMS
 // --------------------------------------------------------
-@input-radius: 0;
+@input-radius: 4px;
 
 // BUTTONS
 // --------------------------------------------------------
 
 // Border radius for non flat buttons
-@btn-border-radius: 3px;
+@btn-border-radius: 4px;
 
 // DIRECT CHAT
 // --------------------------------------------------------
@@ -119,3 +123,13 @@
 // Transition global options
 @transition-speed: .3s;
 @transition-fn: ease-in-out;
+
+
+
+// ADD LOG 新增变量，用于配置顶部导航栏
+@navbar-header-bg: #fff;
+@navbar-header-color: rgba(0, 0, 0, 0.65); 
+@navbar-header-hover-color: @navbar-header-color;
+@navbar-header-hover-bg: @navbar-header-bg;
+
+

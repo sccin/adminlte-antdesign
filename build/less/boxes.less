@@ -6,29 +6,29 @@
   position: relative;
   .border-radius(@box-border-radius);
   background: #ffffff;
-  border-top: 3px solid @box-default-border-top-color;
+  // border-top: 2px solid @box-default-border-top-color;
   margin-bottom: 20px;
   width: 100%;
-  box-shadow: @box-boxshadow;
+  // box-shadow: @box-boxshadow;
 
   // Box color variations
   &.box-primary {
-    border-top-color: @light-blue;
+    .box-color-variant(@light-blue; );
   }
   &.box-info {
-    border-top-color: @aqua;
+    .box-color-variant(@aqua;);
   }
   &.box-danger {
-    border-top-color: @red;
+    .box-color-variant(@red;);
   }
   &.box-warning {
-    border-top-color: @yellow;
+    .box-color-variant(@yellow;);
   }
   &.box-success {
-    border-top-color: @green;
+    .box-color-variant(@green;);
   }
   &.box-default {
-    border-top-color: @gray-lte;
+    .box-color-variant(lighten(@black, 60%); rgba(0,0,0,0.8););
   }
 
   // collapsed mode
@@ -174,7 +174,7 @@
 
 //Box header
 .box-header {
-  color: #444;
+  color: rgba(0, 0, 0, 0.85);
   display: block;
   padding: @box-padding;
   position: relative;
@@ -193,7 +193,7 @@
   > .ion,
   .box-title {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     line-height: 1;
   }

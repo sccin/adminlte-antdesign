@@ -3,10 +3,11 @@
  * ----------
  */
 .skin-blue-light .main-header .navbar {
-  background-color: #1890ff;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
 }
 .skin-blue-light .main-header .navbar .nav > li > a {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.65);
 }
 .skin-blue-light .main-header .navbar .nav > li > a:hover,
 .skin-blue-light .main-header .navbar .nav > li > a:active,
@@ -15,21 +16,21 @@
 .skin-blue-light .main-header .navbar .nav .open > a:hover,
 .skin-blue-light .main-header .navbar .nav .open > a:focus,
 .skin-blue-light .main-header .navbar .nav > .active > a {
-  background: rgba(0, 0, 0, 0.1);
-  color: #f6f6f6;
+  background: #f9f9f9;
+  color: rgba(0, 0, 0, 0.65);
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.65);
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle:hover {
-  color: #f6f6f6;
-  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.65);
+  background: #ffffff;
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.65);
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle:hover {
-  background-color: #0084fe;
+  background-color: #f4f4f4;
 }
 @media (max-width: 767px) {
   .skin-blue-light .main-header .navbar .dropdown-menu li.divider {
@@ -43,12 +44,11 @@
   }
 }
 .skin-blue-light .main-header .logo {
-  background-color: #1890ff;
-  color: #ffffff;
-  border-bottom: 0 solid transparent;
-}
-.skin-blue-light .main-header .logo:hover {
-  background-color: #138eff;
+  position: relative;
+  z-index: 1040;
+  background-color: white;
+  color: #1890ff;
+  box-shadow: 1px 1px 0 0 #e8e8e8;
 }
 .skin-blue-light .main-header li.user-header {
   background-color: #1890ff;
@@ -60,13 +60,11 @@
 .skin-blue-light .main-sidebar,
 .skin-blue-light .left-side {
   background-color: #ffffff;
-}
-.skin-blue-light .main-sidebar {
-  border-right: 1px solid #d2d6de;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
 }
 .skin-blue-light .user-panel > .info,
 .skin-blue-light .user-panel > .info > a {
-  color: #444444;
+  color: rgba(0, 0, 0, 0.65);
 }
 .skin-blue-light .sidebar-menu > li {
   -webkit-transition: border-left-color 0.3s ease;
@@ -74,46 +72,46 @@
   transition: border-left-color 0.3s ease;
 }
 .skin-blue-light .sidebar-menu > li.header {
-  color: #848484;
+  color: rgba(64, 64, 64, 0.65);
   background: #ffffff;
 }
-.skin-blue-light .sidebar-menu > li > a {
-  border-left: 3px solid transparent;
-  font-weight: 600;
-}
 .skin-blue-light .sidebar-menu > li:hover > a,
-.skin-blue-light .sidebar-menu > li.active > a {
-  color: #000000;
-  background: #f4f4f5;
+.skin-blue-light .sidebar-menu > li.active > a,
+.skin-blue-light .sidebar-menu > li.menu-open > a {
+  color: rgba(0, 0, 0, 0.65);
+  background: #ffffff;
 }
-.skin-blue-light .sidebar-menu > li.active {
-  border-left-color: #1890ff;
+.skin-blue-light .sidebar-menu > li:hover > a {
+  color: #1890ff;
 }
 .skin-blue-light .sidebar-menu > li.active > a {
-  font-weight: 600;
+  font-weight: 100;
 }
 .skin-blue-light .sidebar-menu > li > .treeview-menu {
-  background: #f4f4f5;
+  background: #ffffff;
+  padding-left: 0;
 }
 .skin-blue-light .sidebar a {
-  color: #444444;
+  color: rgba(0, 0, 0, 0.65);
 }
 .skin-blue-light .sidebar a:hover {
   text-decoration: none;
 }
 .skin-blue-light .sidebar-menu .treeview-menu > li > a {
-  color: #777777;
+  padding: 10px 5px 10px 35px;
+  color: rgba(0, 0, 0, 0.65);
 }
-.skin-blue-light .sidebar-menu .treeview-menu > li.active > a,
 .skin-blue-light .sidebar-menu .treeview-menu > li > a:hover {
-  color: #000000;
+  color: #1890ff;
 }
 .skin-blue-light .sidebar-menu .treeview-menu > li.active > a {
-  font-weight: 600;
+  color: #1890ff;
+  background: #eef7ff;
+  border-right: 2px solid #1890ff;
 }
 .skin-blue-light .sidebar-form {
   border-radius: 3px;
-  border: 1px solid #d2d6de;
+  border: 1px solid #bfbfbf;
   margin: 10px 10px;
 }
 .skin-blue-light .sidebar-form input[type="text"],
@@ -147,16 +145,19 @@
 }
 @media (min-width: 768px) {
   .skin-blue-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
-    border-left: 1px solid #d2d6de;
+    border-left: 1px solid #bfbfbf;
   }
 }
 .skin-blue-light .main-footer {
-  border-top-color: #d2d6de;
+  border-top-color: #bfbfbf;
 }
 .skin-blue.layout-top-nav .main-header > .logo {
+  position: relative;
+  z-index: 1040;
   background-color: #1890ff;
   color: #ffffff;
   border-bottom: 0 solid transparent;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
 }
 .skin-blue.layout-top-nav .main-header > .logo:hover {
   background-color: #138eff;

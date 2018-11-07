@@ -7,7 +7,8 @@
 .progress,
 .progress > .progress-bar {
   .box-shadow(none);
-  &, .progress-bar {
+  height: 8px;
+  &, .progress-bar {  
     .border-radius(@progress-bar-border-radius);
   }
 }
@@ -15,7 +16,7 @@
 /* size variation */
 .progress.sm,
 .progress-sm {
-  height: 10px;
+  height: 6px;
   &, .progress-bar {
     .border-radius(@progress-bar-sm-border-radius);
   }
@@ -23,7 +24,7 @@
 
 .progress.xs,
 .progress-xs {
-  height: 7px;
+  height: 4px;
   &, .progress-bar {
     .border-radius(@progress-bar-xs-border-radius);
   }
@@ -31,7 +32,7 @@
 
 .progress.xxs,
 .progress-xxs {
-  height: 3px;
+  height: 2px;
   &, .progress-bar {
     .border-radius(@progress-bar-xs-border-radius);
   }
@@ -40,7 +41,7 @@
 /* Vertical bars */
 .progress.vertical {
   position: relative;
-  width: 30px;
+  width: 12px;
   height: 200px;
   display: inline-block;
   margin-right: 10px;
@@ -53,23 +54,23 @@
   //Sizes
   &.sm,
   &.progress-sm {
-    width: 20px;
+    width: 10px;
   }
 
   &.xs,
   &.progress-xs {
-    width: 10px;
+    width: 8px;
   }
   &.xxs,
   &.progress-xxs {
-    width: 3px;
+    width: 6px;
   }
 }
 
 //Progress Groups
 .progress-group {
   .progress-text {
-    font-weight: 600;
+    font-weight: normal;
   }
   .progress-number {
     float: right;
@@ -97,7 +98,7 @@
 
 .progress-bar-aqua,
 .progress-bar-info {
-  .progress-bar-variant(@aqua);
+  .progress-bar-variant(@blue);
 }
 
 .progress-bar-yellow,

@@ -11,12 +11,12 @@
   //Navbar
   .main-header {
     .navbar {
-      .navbar-variant(@red; #fff);
+      .navbar-variant(@navbar-header-bg; @navbar-header-color; @navbar-header-hover-color; @navbar-header-hover-bg;);
       .sidebar-toggle {
-        color: #fff;
-        &:hover {
-          background-color: darken(@red, 5%);
-        }
+        color: @navbar-header-color;  
+        &:hover {  
+          background-color: darken(@navbar-header-bg, 4.5%);
+        } 
       }
       @media (max-width: @screen-header-collapse) {
         .dropdown-menu {
@@ -36,8 +36,9 @@
     }
     //Logo
     .logo {
-      .logo-variant(darken(@red, 5%));
+      .logo-variant(lighten(@sidebar-dark-bg, 4.5%));
     }
+
 
     li.user-header {
       background-color: @red;

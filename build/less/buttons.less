@@ -7,7 +7,8 @@
   .border-radius(@btn-border-radius);
   .box-shadow(@btn-boxshadow);
   border: 1px solid transparent;
-
+  font-weight: normal;
+ 
   &.uppercase {
     text-transform: uppercase
   }
@@ -23,13 +24,14 @@
 
   // Active state
   &:active {
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 
   &:focus {
-    outline: none;
+    outline: 0 !important;
   }
 
   // input file btn
@@ -53,56 +55,67 @@
   }
 }
 
+.btn.disabled, 
+.btn[disabled], 
+fieldset[disabled] .btn{
+  border-style: dashed;
+}
+
+.btn-group-lg>.btn, 
+.btn-lg{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 //Button color variations
 .btn-default {
-  background-color: #f4f4f4;
-  color: #444;
-  border-color: #ddd;
-  &:hover,
-  &:active,
-  &.hover {
-    background-color: darken(#f4f4f4, 5%);
+  background-color: #fff;
+  color: rgba(0,0,0,.65);
+  border-color: #d9d9d9;
+  &:focus, &:hover, &.hover{
+    color:#40a9ff !important;
+    border-color:#40a9ff !important;
+    background-color: #fff !important;
+
+  }
+  &:active{
+    color:#096dd9 !important;
+    border-color:#096dd9 !important;
+    background-color: #fff !important;
   }
 }
 
 .btn-primary {
-  background-color: @light-blue;
-  border-color: darken(@light-blue, 5%);
-  &:hover, &:active, &.hover {
-    background-color: darken(@light-blue, 5%);
-  }
+  .btn-color-variant(@light-blue);
 }
 
 .btn-success {
-  background-color: @green;
-  border-color: darken(@green, 5%);
-  &:hover, &:active, &.hover {
-    background-color: darken(@green, 5%);
-  }
+  .btn-color-variant(@green);
 }
 
 .btn-info {
-  background-color: @aqua;
-  border-color: darken(@aqua, 5%);
-  &:hover, &:active, &.hover {
-    background-color: darken(@aqua, 5%);
-  }
+  .btn-color-variant(@aqua);
 }
 
 .btn-danger {
-  background-color: @red;
-  border-color: darken(@red, 5%);
-  &:hover, &:active, &.hover {
-    background-color: darken(@red, 5%);
+  background-color: #d9d9d9;
+  color: @red;
+  border-color: #d9d9d9;
+  &:focus, &:hover, &.hover{
+    color:#fff !important;
+    border-color:#ff4d4f !important;
+    background-color: #ff4d4f !important;
+
+  }
+  &:active{
+    color:#fff !important;
+    border-color:#cf1322 !important;
+    background-color: #cf1322 !important;
   }
 }
 
 .btn-warning {
-  background-color: @yellow;
-  border-color: darken(@yellow, 5%);
-  &:hover, &:active, &.hover {
-    background-color: darken(@yellow, 5%);
-  }
+  .btn-color-variant(@yellow);
 }
 
 .btn-outline {
@@ -135,26 +148,25 @@
   min-width: 80px;
   height: 60px;
   text-align: center;
-  color: #666;
-  border: 1px solid #ddd;
-  background-color: #f4f4f4;
+  color: rgba(0,0,0,.65);
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
   font-size: 12px;
   //Icons within the btn
   > .fa, > .glyphicon, > .ion {
     font-size: 20px;
     display: block;
   }
+  &:focus, &:hover, &.hover{
+    color:#40a9ff !important;
+    border-color:#40a9ff !important;
+    background-color: #fff !important;
 
-  &:hover {
-    background: #f4f4f4;
-    color: #444;
-    border-color: #aaa;
   }
-
-  &:active, &:focus {
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  &:active{
+    color:#096dd9 !important;
+    border-color:#096dd9 !important;
+    background-color: #fff !important;
   }
 
   //The badge
