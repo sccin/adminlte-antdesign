@@ -32,8 +32,8 @@
 下载框架源码，修改LESS样式文件，启动Grunt脚手架编译，适用于LESS源代码的二次开发。
 
 ```bash
-$ git clone https://github.com/ant-design/ant-design-pro.git --depth=1
-$ cd ant-design-pro
+$ git clone https://github.com/Alsiso/adminlte-antdesign.git --depth=1
+$ cd adminlte-antdesign
 $ npm install grunt --save-dev
 ```
 
