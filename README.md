@@ -3,7 +3,7 @@
 
 <div align="center">
 
-基于Ant Design设计语言的 AdminLT 主题样式	
+基于Ant Design设计语言的 AdminLTE 主题样式
 
 ![](https://user-images.githubusercontent.com/8186664/44953195-581e3d80-aec4-11e8-8dcb-54b9db38ec11.png)
 
@@ -28,7 +28,7 @@
 
 ## 使用
 
-### 框架源码
+### 1、框架源码
 下载框架源码，修改LESS样式文件，启动Grunt脚手架编译，适用于LESS源代码的二次开发。
 
 ```bash
@@ -37,7 +37,7 @@ $ cd ant-design-pro
 $ npm install grunt --save-dev
 ```
 
-### 样式文件
+### 2、样式文件
 如果你的项目是基于AdminLTE的，若想直接使用这套主题样式，可以下载样式文件直接在你的项目中替换对样式文件即可。
 使用这种方法的前提，需要AdminLTE的版本保持一致，并且项目中的AdminLTE样式文件没有做修改，以防样式文件丢失。
 
@@ -48,14 +48,16 @@ $ npm install grunt --save-dev
 ```
 - dist
   - css
-  	- skins // 主题文件夹全部替换
-  	- AdminLTE.css // 框架样式文件替换 
-  	- AdminLTE.min.css	// 框架样式压缩文件替换
+    - skins // 主题文件夹全部替换
+    - AdminLTE.css // 框架样式文件替换 
+    - AdminLTE.min.css	// 框架样式压缩文件替换
 ```
 
 ## 问题反馈
+
 首先非常感谢Ant Design及AdminLTE(Bootstrap)这么优秀开源框架，可以提供我们学习及使用。
 当然我也会力所能及的将优秀的代码及产品分享给大家，但是考虑到个人能力和精力有限，所以当你们在使用的过程中遇到问题：
+
 	- 通过 [Issue](http://github.com/ant-design/ant-design-pro/issues) 报告 bug 或进行咨询。
 	- 或者直接联系我的个人邮箱 [chyi722@163.com](mailto:chyi722@163.com)
 
