@@ -58,9 +58,8 @@ $ npm install grunt --save-dev
 首先非常感谢Ant Design及AdminLTE(Bootstrap)这么优秀开源框架，可以提供我们学习及使用。
 当然我也会力所能及的将优秀的代码及产品分享给大家，但是考虑到个人能力和精力有限，所以当你们在使用的过程中遇到问题：
 
-	- 通过 [Issue](http://github.com/ant-design/ant-design-pro/issues) 报告 bug 或进行咨询。
-	- 或者直接联系我的个人邮箱 [chyi722@163.com](mailto:chyi722@163.com)
-
+- 通过 [Issue](http://github.com/ant-design/ant-design-pro/issues) 报告 bug 或进行咨询。
+- 或者直接联系我的个人邮箱 [chyi722@163.com](mailto:chyi722@163.com)
 
 
 
@@ -68,7 +67,23 @@ $ npm install grunt --save-dev
 
 ### 1.0.0
 
+#### 全局
+- 修改基础的字体家族
+- 修改字体默认、链接样式
+- 修改字体的粗细为400
+- 增加MacOS下字体抗锯齿渲染
+- 
 
+#### 侧边导航
+- 增加侧边栏阴影
+- 
+
+
+#### 顶部导航
+
+#### 组件
+
+#### 主题
 
 
 
