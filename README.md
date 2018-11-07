@@ -55,8 +55,8 @@ $ npm install grunt --save-dev
 
 ## 问题反馈
 
-首先非常感谢Ant Design及AdminLTE(Bootstrap)这么优秀开源框架，可以提供我们学习及使用。
-当然我也会力所能及的将优秀的代码及产品分享给大家，但是考虑到个人能力和精力有限，所以当你们在使用的过程中遇到问题：
+首先非常感谢Ant Design及AdminLTE(Bootstrap)这么优秀开源框架，可以供我们学习及使用。<br/>
+我也会力所能及的将优秀的代码及产品分享给大家，但是考虑到个人能力和精力有限，所以当你们在使用的过程中遇到问题：
 
 - 通过 [Issue](http://github.com/ant-design/ant-design-pro/issues) 报告 bug 或进行咨询。
 - 或者直接联系我的个人邮箱 [chyi722@163.com](mailto:chyi722@163.com)
@@ -72,79 +72,62 @@ $ npm install grunt --save-dev
 - 修改字体默认、链接样式
 - 修改字体的粗细为400
 - 增加MacOS下字体抗锯齿渲染
-- 
 
 #### 侧边导航
-- 增加侧边栏阴影
-- 
-
+- 修改侧边栏的宽度，包括mini时的宽度
+- 修改侧边栏的背景色，包括深色及浅色
+- 增加侧边栏的投影效果
+- 修改字体默认、滑动，选中的样式
+- 修改菜单子项的间距及边距
+- 修改文字与图标的间距
+- 支持主题切换时的样式切换
 
 #### 顶部导航
+- 调整顶部导航的高度
+- 增加顶部导航的投影效果
+- 调整收缩图标的大小
+- 修改了气泡的样式，包括间距及字体大小
+- 调整了导航栏子项的滑动效果
+- 增加了导航栏中下拉菜单的投影效果
 
 #### 组件
 
+- 按钮 buttons
+ - 修改默认按钮的样式
+ - 修改主要按钮的样式
+ - 修改禁用按钮的样式
+ - 修改危险按钮的样式
+ - 修改组合按钮的样式
+ - 修改不同颜色按钮的色值
+- boxes 盒子
+ - 修改了边框颜色
+ - 修改了盒子投影值
+ - 修改了盒子内部的间距
+ - 修改了盒子header的字体大小及颜色
+ - 修改了不同颜色盒子的显示效果
+- alert 警告
+ - 修改了主体的圆角值
+ - 修改了多种警告的背景颜色，边框颜色，文字颜色，图标间距
+- callout 标注
+ - 修改了主体的圆角值
+ - 修改了多种标注的背景颜色，边框颜色，文字颜色，图标间距
+- dropmenu 下拉菜单
+ - 修改footer的字体大小
+ - 增加一种常用的圆角背景图标
+- form 表单
+ - 增加表单元素的阴影效果
+ - 增加表单元素的focus样式
+- progress-bars 进度条
+ - 修改横向进度条的高度
+ - 修改纵向进度条的宽度
+ - 修改进度的背景颜色
+ - 修改进度条文字的粗细
+- navs 导航
+ - 修改导航页签的整体样式
+
 #### 主题
-
-
-
-介绍
-============
-
-**AIFish Design** -- 是我们基于 AdminLTE（Bootstrap） 引入了企业级产品的设计体系，形成了一套完整的设计语言，并且重新给这套UI库取了一个新名称叫 AIFish Design。
-
-**预览地址 [aifish.github.io](https://aifish.github.io)**
-
-### 如何使用？
-1. 下载项目到本地
-2. 安装node及npm，版本v8.12.0
-3. 安装grunt `npm install -g grunt-cli`
-4. 命令行的当前目录转到项目的根目录下
-5. 安装Grunt最新版本到项目目录中 `npm install grunt --save-dev`
-6. 执行`grunt`命令
-
-
-### LESS文件更新日志
-
-#### Bootstrap variables文件（build/bootstrap-less/variables.less)
- * L360 `@navbar-height:50px;` 修改为 `@navbar-height:64px;`,设置顶部导航栏的高度，将高度调整为64px；
-
-
-#### AdminLTE core.less 文件（build/less/core.less)
- * L14 `font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;` 修改为 `font-family: @font-family-base;`  将字体设置统一用变量设置.
- * L148 `font-family: 'Source Sans Pro', sans-serif;', 'Helvetica Neue', Helvetica, Arial, sans-serif;` 修改为 `font-family: @font-family-base;`  将字体设置统一用变量设置.
-
-
-#### AdminLTE variables.less 文件（build/less/variables.less)
- * L7 `@light-blue:#3c8dbc`  修改为  `@light-blue:#1890ff` ，此变量为主色调背景，运用于按钮颜色！
- * L9 `@red: #dd4b39;` 修改为 `@red: #F5222D;`  ，此变量危险色背景，运用于错误，失败，气泡背景！
- * L11 `@green: #00a65a;` 修改为 `@green: #52c41a;`，此变量成功色背景，运用于提交成功！
- * L32 `@sidebar-width: 230px;` 修改为 `@sidebar-width: 256px;`， 此变量是侧边栏宽度，宽度从230调整至256，更适合大屏幕比例显示。
- * L44 `@content-bg: #ecf0f5; ` 修改为 `@content-bg: #f0f2f5;`，设置主要背景色，（主内容区的背景色），将颜色调的更浅一些，更舒适。
- * L50 `@sidebar-dark-bg: #222d32;` 修改为 `@sidebar-dark-bg: #001529;` 设置深色侧边栏背景色，颜色调的更深一些。
- * L59 `@sidebar-light-bg: #f9fafc;` 修改为 `@sidebar-light-bg: #fff;` 设置亮色侧边栏背景色，颜色调整为白色。
-
-
-#### AdminLTE header.less 文件（build/less/header.less)
- * L115 `line-height: 50px;` 修改为 `line-height: @navbar-height;` ，将行高值修改为变量，用于灵活设置进行垂直居中对齐。
-
-#### AdminLTE sidebar.less 文件（build/less/sidebar.less)
- * L0 `padding-top: 50px;` 修改为 `padding-top: @navbar-height;` ，将行高值修改为变量，用于灵活设置侧边栏的上边距。
-
-
-#### AdminLTE Skin文件（build/less/skin/skin-blue.less)
- * L39 `.logo-variant(darken(@light-blue, 5%));` 修改为 `.logo-variant(lighten(@sidebar-dark-bg, 4.5%));` ,设置logo处的背景色，是根据侧边栏的背景色高亮4.5%
-
-
-
-#### 系统布局及样式切换说明
-1. 提供固定Header及侧边栏的开关
-2. 提供主内容区域的固定模式的开关
-3. 提供开启收缩侧边栏的开关
-4. 提供6种主色调及深浅各两种风格主题的切换
-5. 主色调：拂晓蓝（默认）、极客蓝、酱紫、极光绿、火山、日暮
-
-#### 主题切换说明
 系统主题的切换主要表现在以下几个方面：
+
 1. 全局：a超链接的颜色会根据主题色进行变化
 2. 侧边栏：分为亮色和暗色的风格，一套主题分别提供两套风格选择
 3. 侧边栏：侧边栏的菜单选中背景会根据主题色变化
