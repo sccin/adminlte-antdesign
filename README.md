@@ -52,13 +52,13 @@ $ npm install grunt --save-dev
     - AdminLTE.css // 框架样式文件替换 
     - AdminLTE.min.css	// 框架样式压缩文件替换
 ```
-
+  
 ## 问题反馈
 
 首先非常感谢Ant Design及AdminLTE(Bootstrap)这么优秀开源框架，可以供我们学习及使用。<br/>
 我也会力所能及的将优秀的代码及产品分享给大家，但是考虑到个人能力和精力有限，所以当你们在使用的过程中遇到问题：
 
-- 通过 [Issue](http://github.com/ant-design/ant-design-pro/issues) 报告 bug 或进行咨询。
+- 通过 [Issue](https://github.com/Alsiso/adminlte-antdesign/issues) 报告 bug 或进行咨询。
 - 或者直接联系我的个人邮箱 [chyi722@163.com](mailto:chyi722@163.com)
 
 
